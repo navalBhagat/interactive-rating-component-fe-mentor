@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+html { 
+    width: 100%;
+    height: 100%;
+}
+
+body { 
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+#root { 
+    width: 100%;
+    height: 100%;
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+    background-color: #141519;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Overpass', sans-serif;
+}
+
+.card-rating { 
+   background-image: linear-gradient(#202731, #171e26);
+   width: 25rem;
+   height: 25rem;
+   border-radius: 8%;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+   align-items: start;
+   padding: 2rem;
+   color: white;
+}
+
+.card-thankyou { 
+    background-image: linear-gradient(#202731, #171e26);
+    width: 25rem;
+    height: 25rem;
+    border-radius: 8%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem;
+    color: white;
+ }
+
+.star-icon-circle {
+    background-color: #2f363f;
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin-top: -20rem; 
+}
+
+.question {
+    font-weight: 700;
+    font-size: xx-large;
+    margin-top: 5rem;
+}
+
+.description {
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: hsl(217, 12%, 63%);
+    line-height: 1.8rem;
+    padding-right: 1rem;
+}
+
+.options {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.option {
+    color: hsl(217, 12%, 63%);
+    border-radius: 50%;
+    background-color: #2f363f;
+    height: 3.2rem;
+    width: 3.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.option:hover {
+    background-color: hsl(25, 97%, 53%);
+    color: black;
+}
+
+.selected-option {
+    background-color: white;
+    color: black;
+    height: 3.2rem;
+    width: 3.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.submit-button {
+    background-color: hsl(25, 97%, 53%);
+    border: none;
+    width: 100%;
+    height: 3rem;
+    border-radius: 3rem;
+    font-weight: 700;
+    font-size: large;
+    margin-top: 1rem;
+    letter-spacing: 0.2rem;
+}
+
+.submit-button:hover{
+    background-color: white;
+    color: black ;
+}
+
+.thankyou-image {
+    margin-bottom: 1rem;
+}
+
+.pill {
+    background-color: #2f363f;
+    color: hsl(25, 97%, 53%);
+    border-radius: 5rem;
+    height: 2rem;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    font-size: medium   ;
+}
+
+.thankyou {
+    font-weight: 700;
+    font-size: xx-large;
+    margin-top: 1.5rem;
+    margin-bottom: -0.5rem;
+}
+
+.thankyou-description {
+    color: hsl(217, 12%, 63%);
+    font-weight: 500;
+    font-size: large;
+    line-height: 1.8rem;
+    text-align: center;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+@media (max-width:500px) {
+    .card-rating, .card-thankyou {
+        width: 17rem;
+        height: 17rem;
+    }
+
+    .star-icon-circle {
+        margin-top: -15rem;
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    .question {
+        font-size: x-large;
+        margin-top: 4rem;
+    }
+
+    .description {
+        font-size: small;
+        line-height: 1.2rem;
+        margin-top: 0.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .option, .selected-option {
+        height: 2.5rem;
+        width: 2.5rem;
+        margin-top: -0.5rem;
+    }
+
+    .submit-button {
+        height: 2.5rem;
+        font-size: small;  
+    }
+
+    .thankyou-image {
+        width: 8rem;
+        height: 6rem;
+    }
+
+    .pill {
+        font-size: smaller;
+        width: 60%;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+        height: 1.5rem;
+    }
+
+    .thankyou  {
+        font-size: large;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;  
+    }
+
+    .thankyou-description {
+        font-size: small;
+        line-height: 1.3rem;
+        width: 95%
+    }
+}
+
